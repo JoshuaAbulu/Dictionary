@@ -129,7 +129,7 @@
 
             <h2 class = "text-xl text-purple-900" >/${ipa}/</h2>`
           }
-          if(audioUrl && (data[0].shortdef.length < 1 && data[1].shortdef.length < 1)){
+          if(audioUrl && data[0].shortdef.length < 1 && !data[1]){
             let noDefinition = document.createElement('span')
             noDefinition.classList.add('text-xl', 'text-red-500')
             noDefinition.innerHTML = `No definition found`
